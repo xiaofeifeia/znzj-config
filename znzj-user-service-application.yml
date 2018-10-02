@@ -4,8 +4,7 @@
     - dev
 ---
 server:
-  port: 8781
-
+  port: 8781 
 spring: 
   profiles: dev 
   application: 

@@ -10,7 +10,7 @@ server:
 spring: 
   profiles: dev 
   application: 
-    name: znzj-eureka-dev
+    name: znzj-eureka
 
 eureka:
   instance:
@@ -36,7 +36,7 @@ server:
 spring: 
   profiles: test 
   application: 
-    name: znzj-eureka-test
+    name: znzj-eureka
 
 eureka:
   instance:

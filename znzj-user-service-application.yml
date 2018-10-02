@@ -1,4 +1,4 @@
-spring: 
+ï»¿spring: 
   profiles: 
     active: 
     - dev
@@ -13,11 +13,11 @@ spring:
 
 eureka:
   instance: 
-    prefer-ip-address: true #Ê¹ÓÃIP×¢²á
+    prefer-ip-address: true #ä½¿ç”¨IPæ³¨å†Œ
     instance-id: ${spring.application.name}:${server.port}
-    ##ĞøÔ¼µ½ÆÚÊ±¼ä10Ãë£¬Ä¬ÈÏÊÇ90Ãë
+    ##ç»­çº¦åˆ°æœŸæ—¶é—´10ç§’ï¼Œé»˜è®¤æ˜¯90ç§’
     lease-expiration-duration-in-seconds: 10
-    ##ĞøÔ¼¸üĞÂÊ±¼ä¼ä¸ôÉèÖÃ5Ãë£¬mÄ¬ÈÏ30s
+    ##ç»­çº¦æ›´æ–°æ—¶é—´é—´éš”è®¾ç½®5ç§’ï¼Œmé»˜è®¤30s
     lease-renewal-interval-in-seconds: 5
   client: 
     service-url: 
@@ -59,11 +59,11 @@ spring:
 
 eureka:
   instance: 
-    prefer-ip-address: true #Ê¹ÓÃIP×¢²á
+    prefer-ip-address: true #ä½¿ç”¨IPæ³¨å†Œ
     instance-id: ${spring.application.name}:${server.port}
-    ##ĞøÔ¼µ½ÆÚÊ±¼ä10Ãë£¬Ä¬ÈÏÊÇ90Ãë
+    ##ç»­çº¦åˆ°æœŸæ—¶é—´10ç§’ï¼Œé»˜è®¤æ˜¯90ç§’
     lease-expiration-duration-in-seconds: 10
-    ##ĞøÔ¼¸üĞÂÊ±¼ä¼ä¸ôÉèÖÃ5Ãë£¬mÄ¬ÈÏ30s
+    ##ç»­çº¦æ›´æ–°æ—¶é—´é—´éš”è®¾ç½®5ç§’ï¼Œmé»˜è®¤30s
     lease-renewal-interval-in-seconds: 5
   client: 
     service-url: 

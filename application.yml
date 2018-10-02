@@ -4,11 +4,11 @@
     - dev
 ---
 spring: 
-  profiles:dev 
+  profiles: dev 
   application: 
-    name:znzj-config-zj-dev 
+    name: znzj-config-zj-dev 
 ---
 spring: 
-  profiles:test 
+  profiles: test 
   application: 
-    name:znzj-config-zj-test 
+    name: znzj-config-zj-test 

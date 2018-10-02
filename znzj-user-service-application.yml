@@ -6,9 +6,6 @@ spring:
 ---
 server:
   port: 8781
-
-spring: 
-  profiles: dev 
   
 eureka:
   instance: 
@@ -29,6 +26,7 @@ info:
   build.version: $project.version$
   
 spring: 
+  profiles: dev 
   application:
     name: znzj-user-service
   datasource:
@@ -51,9 +49,6 @@ mybatis:
 ---
 server:
   port: 8782
-
-spring: 
-  profiles: test
   
 eureka:
   instance: 
@@ -74,6 +69,7 @@ info:
   build.version: $project.version$
   
 spring: 
+  profiles: test
   application:
     name: znzj-user-service
   datasource:

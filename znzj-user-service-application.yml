@@ -7,7 +7,12 @@
 
 server:
   port: 8781
-  
+
+spring: 
+  profiles: dev 
+  application: 
+    name: znzj-user-service-dev  
+    
 eureka:
   instance: 
     prefer-ip-address: true #使用IP注册
@@ -49,7 +54,12 @@ mybatis:
 
 server:
   port: 8782
-  
+
+spring: 
+  profiles: dev 
+  application: 
+    name: znzj-user-service-dev
+    
 eureka:
   instance: 
     prefer-ip-address: true #使用IP注册

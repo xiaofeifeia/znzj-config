@@ -10,8 +10,6 @@ server:
 
 spring: 
   profiles: dev 
-  application: 
-    name: znzj-user-service-dev  
     
 eureka:
   instance: 
@@ -56,9 +54,7 @@ server:
   port: 8782
 
 spring: 
-  profiles: test 
-  application: 
-    name: znzj-user-service-test
+  profiles: test
     
 eureka:
   instance: 

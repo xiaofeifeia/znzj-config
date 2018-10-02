@@ -46,5 +46,5 @@ spring:
     timeout: 5000 
 
 mybatis: 
-  type-aliases-package: com.znzj.model
-  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.znzj.model 
+  mapper-locations: classpath:mapper/**/*.xml 

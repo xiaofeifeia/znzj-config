@@ -32,8 +32,8 @@ zuul:
   routes: 
     user.serviceId: znzj-user-service
     user.path: /user-service/**
-    analyzer.serviceId:znzj-analyzer-service
-    analyzer.path:/analyzer-service/**
+    analyzer.serviceId: znzj-analyzer-service
+    analyzer.path: /analyzer-service/**
     
 info: 
   app.name:  ${spring.application.name}
@@ -70,8 +70,8 @@ zuul:
   routes: 
     user.serviceId: znzj-user-service
     user.path: /user-service/**
-    analyzer.serviceId:znzj-analyzer-service
-    analyzer.path:/analyzer-service/**
+    analyzer.serviceId: znzj-analyzer-service
+    analyzer.path: /analyzer-service/**
     
 info: 
   app.name:  ${spring.application.name}

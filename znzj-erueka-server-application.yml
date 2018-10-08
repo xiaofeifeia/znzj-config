@@ -20,9 +20,9 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-  server: 
-    eviction-interval-timer-in-ms: 5000  #清理间隔（单位毫秒，默认是60*1000），开发环境设置如下可快速移除不可用的服务
-    enable-self-preservation: false  #设为false，关闭自我保护
+  #server: 
+    #eviction-interval-timer-in-ms: 5000  #清理间隔（单位毫秒，默认是60*1000），开发环境设置如下可快速移除不可用的服务
+    #enable-self-preservation: false  #设为false，关闭自我保护
 #actuator监控点 start#
 endpoints:
   health:
@@ -46,9 +46,9 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-  server: 
-    eviction-interval-timer-in-ms: 5000  #清理间隔（单位毫秒，默认是60*1000），开发环境设置如下可快速移除不可用的服务
-    enable-self-preservation: false  #设为false，关闭自我保护
+  #server: 
+    #eviction-interval-timer-in-ms: 5000  #清理间隔（单位毫秒，默认是60*1000），开发环境设置如下可快速移除不可用的服务
+    #enable-self-preservation: false  #设为false，关闭自我保护
 #actuator监控点 start#
 endpoints:
   health:

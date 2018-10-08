@@ -12,9 +12,9 @@ eureka:
     prefer-ip-address: true #使用IP注册
     instance-id: ${spring.application.name}:${server.port}
     ##续约到期时间10秒，默认是90秒
-    lease-expiration-duration-in-seconds: 10
+    #lease-expiration-duration-in-seconds: 10
     ##续约更新时间间隔设置5秒，m默认30s
-    lease-renewal-interval-in-seconds: 5
+    #lease-renewal-interval-in-seconds: 5
   client: 
     service-url: 
       defaultZone: http://localhost:8761/eureka/
@@ -63,9 +63,9 @@ eureka:
     prefer-ip-address: true #使用IP注册
     instance-id: ${spring.application.name}:${server.port}
     ##续约到期时间10秒，默认是90秒
-    lease-expiration-duration-in-seconds: 10
+    #lease-expiration-duration-in-seconds: 10
     ##续约更新时间间隔设置5秒，m默认30s
-    lease-renewal-interval-in-seconds: 5
+    #lease-renewal-interval-in-seconds: 5
   client: 
     service-url: 
       defaultZone: http://localhost:8761/eureka/

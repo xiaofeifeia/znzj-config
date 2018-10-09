@@ -50,7 +50,7 @@ spring:
   application:
     name: znzj-api-gateway
   redis:
-    host: localhost
+    host: 192.168.96.102
     port: 6379
     password: ahui123321
     timeout: 5000 

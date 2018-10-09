@@ -31,7 +31,7 @@ endpoints:
 
 ---
 server:
-  port: 8769
+  port: 8761
 
 spring: 
   profiles: test 

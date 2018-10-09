@@ -1,0 +1,113 @@
+﻿
+spring: 
+  profiles: 
+    active: 
+    - dev
+---
+server:
+  port: 8782
+  
+eureka:
+  instance: 
+    prefer-ip-address: true #使用IP注册
+    instance-id: ${spring.application.name}:${server.port}
+    ##续约到期时间10秒，默认是90秒
+    #lease-expiration-duration-in-seconds: 10
+    ##续约更新时间间隔设置5秒，m默认30s
+    #lease-renewal-interval-in-seconds: 5
+  client: 
+    service-url: 
+      defaultZone: http://localhost:8761/eureka/
+
+feign: 
+  hystrix: 
+    enabled: true 
+    
+##调整格隔离策略,防止feign相互之间调用丢失参数
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
+
+info: 
+  app.name: ${spring.application.name}
+  company.name: www.xph.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+  
+spring: 
+  profiles: dev
+  application:
+    name: znzj-analyzer-service
+  datasource:
+     type: com.alibaba.druid.pool.DruidDataSource
+     platform: mysql
+     url: jdbc:mysql://localhost:3306/znzj?useUnicode=true&characterEncoding=utf-8
+     username: root
+     password: 123456
+  redis:
+    host: localhost 
+    port: 6379
+    password: ahui123321
+    timeout: 5000 
+
+mybatis: 
+  type-aliases-package: com.znzj.model
+  mapper-locations: classpath:mapper/**/*.xml
+  
+---
+server:
+  port: 8782
+  
+eureka:
+  instance: 
+    prefer-ip-address: true #使用IP注册
+    instance-id: ${spring.application.name}:${server.port}
+    ##续约到期时间10秒，默认是90秒
+    #lease-expiration-duration-in-seconds: 10
+    ##续约更新时间间隔设置5秒，m默认30s
+    #lease-renewal-interval-in-seconds: 5
+  client: 
+    service-url: 
+      defaultZone: http://localhost:8761/eureka/
+
+feign: 
+  hystrix: 
+    enabled: true 
+    
+##调整格隔离策略,防止feign相互之间调用丢失参数
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
+
+info: 
+  app.name: ${spring.application.name}
+  company.name: www.xph.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+  
+spring: 
+  profiles: test
+  application:
+    name: znzj-analyzer-service
+  datasource:
+     type: com.alibaba.druid.pool.DruidDataSource
+     platform: mysql
+     url: jdbc:mysql://localhost:3306/znzj?useUnicode=true&characterEncoding=utf-8
+     username: root
+     password: ahui123321
+  redis:
+    host: 192.168.96.102 
+    port: 6379
+    password: ahui123321
+    timeout: 5000 
+
+mybatis: 
+  type-aliases-package: com.znzj.model
+  mapper-locations: classpath:mapper/**/*.xml
+

@@ -1,0 +1,50 @@
+﻿
+spring: 
+  profiles: 
+    active: 
+    - dev
+
+---
+server:
+  port: 8792
+  
+spring:
+  profiles: dev
+  application:
+    name:  znzj-service-monitor
+eureka:
+  instance: 
+    prefer-ip-address: true 
+    instance-id: ${spring.application.name}:${server.port}
+  client: 
+    service-url: 
+      defaultZone: http://localhost:8761/eureka/
+      
+turbine:
+  aggregator: 
+    clusterConfig: default
+  appConfig: znzj-api-gateway,znzj-user-service,znzj-analyzer-service
+  clusterNameExpression: new String("default")
+  
+---
+server:
+  port: 8791
+  
+spring:
+  profiles: test
+  application:
+    name:  znzj-service-monitor
+eureka:
+  instance: 
+    prefer-ip-address: true 
+    instance-id: ${spring.application.name}:${server.port}
+  client: 
+    service-url: 
+      defaultZone: http://localhost:8761/eureka/
+      
+turbine:
+  aggregator: 
+    clusterConfig: default
+  appConfig: znzj-api-gateway,znzj-user-service,znzj-analyzer-service
+  clusterNameExpression: new String("default")
+

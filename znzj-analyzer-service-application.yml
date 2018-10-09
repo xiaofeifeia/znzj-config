@@ -84,6 +84,8 @@ hystrix:
       execution:
         isolation:
           strategy: SEMAPHORE
+          thread: 
+            timeoutInMilliseconds: 5000
 
 info: 
   app.name: ${spring.application.name}

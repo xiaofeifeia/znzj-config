@@ -58,7 +58,7 @@ mybatis:
 
 ---
 server:
-  port: 8782
+  port: 8781
   
 eureka:
   instance: 

@@ -25,7 +25,12 @@ turbine:
     clusterConfig: default
   appConfig: znzj-api-gateway,znzj-user-service,znzj-analyzer-service
   clusterNameExpression: new String("default")
-  
+
+info: 
+  app.name: ${spring.application.name}
+  company.name: www.xph.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
 ---
 server:
   port: 8791
@@ -47,4 +52,10 @@ turbine:
     clusterConfig: default
   appConfig: znzj-api-gateway,znzj-user-service,znzj-analyzer-service
   clusterNameExpression: new String("default")
+
+info: 
+  app.name: ${spring.application.name}
+  company.name: www.xph.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
 

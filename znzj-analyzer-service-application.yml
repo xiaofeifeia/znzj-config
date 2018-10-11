@@ -56,6 +56,14 @@ spring:
     password: ahui123321
     timeout: 5000 
 
+ftp: 
+  ip: 21.201.65.111
+  port: 21
+  username: ftpuser
+  password: newlqwe!@#
+  views: 
+    url: http://121.201.65.111:86
+
 mybatis: 
   type-aliases-package: com.znzj.model
   mapper-locations: classpath:mapper/**/*.xml
@@ -111,6 +119,14 @@ spring:
     port: 6379
     password: ahui123321
     timeout: 5000 
+
+ftp: 
+  ip: 21.201.65.111
+  port: 21
+  username: ftpuser
+  password: newlqwe!@#
+  views: 
+    url: http://121.201.65.111:86
 
 mybatis: 
   type-aliases-package: com.znzj.model

@@ -57,10 +57,10 @@ spring:
     timeout: 5000 
 
 ftp: 
-  ip: 21.201.65.111
+  ip: 192.168.1.11
   port: 21
-  username: ftpuser
-  password: newlqwe!@#
+  username: ftp
+  password: Abc@123456!
   views: 
     url: http://121.201.65.111:86
 
@@ -121,10 +121,10 @@ spring:
     timeout: 5000 
 
 ftp: 
-  ip: 21.201.65.111
+  ip: 192.168.1.11
   port: 21
-  username: ftpuser
-  password: newlqwe!@#
+  username: ftp
+  password: Abc@123456!
   views: 
     url: http://121.201.65.111:86
 

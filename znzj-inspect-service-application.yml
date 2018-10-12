@@ -53,6 +53,11 @@ spring:
 mybatis: 
   type-aliases-package: com.znzj.model
   mapper-locations: classpath:mapper/**/*.xml
+  
+inspect:
+  ability:
+    wav.url: http://121.201.65.111:6101/ability/offlineasr
+    v3.url: http://121.201.65.111:6101/ability/offlineasr
 
 ---
 server:
@@ -103,3 +108,8 @@ spring:
 mybatis: 
   type-aliases-package: com.znzj.model
   mapper-locations: classpath:mapper/**/*.xml
+  
+inspect:
+  ability:
+    wav.url: http://localhost:20101/ability/offlineasr
+    v3.url: http://localhost:20101/ability/offlineasr

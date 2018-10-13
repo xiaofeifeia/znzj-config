@@ -24,14 +24,6 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port}
     prefer-ip-address: true 
-
-hystrix:
-  command: 
-    default:
-      execution:
-        isolation: 
-          thread: 
-            timeoutInMilliseconds: 15000
     
 zuul: 
   #ignored-services: znzj-user-service
@@ -42,6 +34,9 @@ zuul:
     user.path: /user-service/**
     analyzer.serviceId: znzj-analyzer-service
     analyzer.path: /analyzer-service/**
+  host: 
+    socket-timeout-millis: 15000 
+    connect-timeout-millis: 15000
     
 info: 
   app.name:  ${spring.application.name}
@@ -81,14 +76,10 @@ zuul:
     user.path: /user-service/**
     analyzer.serviceId: znzj-analyzer-service
     analyzer.path: /analyzer-service/**
+  host: 
+    socket-timeout-millis: 15000 
+    connect-timeout-millis: 15000
     
-hystrix:
-  command: 
-    default:
-      execution:
-        isolation: 
-          thread: 
-            timeoutInMilliseconds: 15000
     
 info: 
   app.name:  ${spring.application.name}

@@ -37,6 +37,7 @@ zuul:
   host: 
     socket-timeout-millis: 15000 
     connect-timeout-millis: 15000
+
   
 hystrix:
   command:
@@ -45,6 +46,12 @@ hystrix:
         isolation:
           thread: 
             timeoutInMilliseconds: 15000
+          
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1  
     
 info: 
   app.name:  ${spring.application.name}
@@ -95,7 +102,12 @@ hystrix:
         isolation:
           thread: 
             timeoutInMilliseconds: 15000
-            
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1  
 info: 
   app.name:  ${spring.application.name}
   company.name: www.xph.com

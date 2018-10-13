@@ -37,6 +37,14 @@ zuul:
   host: 
     socket-timeout-millis: 15000 
     connect-timeout-millis: 15000
+  
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 15000
     
 info: 
   app.name:  ${spring.application.name}
@@ -80,7 +88,14 @@ zuul:
     socket-timeout-millis: 15000 
     connect-timeout-millis: 15000
     
-    
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 15000
+            
 info: 
   app.name:  ${spring.application.name}
   company.name: www.xph.com

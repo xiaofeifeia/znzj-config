@@ -58,7 +58,7 @@ inspect:
   ability:
     wav.url: http://121.201.65.111:6101/ability/offlineasr
     v3.url: http://121.201.65.111:6101/ability/offlineasr
-    analyzer.url: http://121.201.65.111:6500
+  analyzer.url: http://121.201.65.111:6500
 
 ---
 server:
@@ -114,4 +114,4 @@ inspect:
   ability:
     wav.url: http://localhost:20101/ability/offlineasr
     v3.url: http://localhost:20101/ability/offlineasr
-    analyzer.url: http://121.201.65.111:6500
+  analyzer.url: http://121.201.65.111:6500

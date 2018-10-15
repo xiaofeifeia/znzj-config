@@ -37,8 +37,8 @@ zuul:
     inspect.serviceId: znzj-inspect-service
     inspect.path: /inspect-service/**
   host: 
-    socket-timeout-millis: 15000 
-    connect-timeout-millis: 15000
+    socket-timeout-millis: 60000 
+    connect-timeout-millis: 60000
 
   
 hystrix:
@@ -47,11 +47,11 @@ hystrix:
       execution:
         isolation:
           thread: 
-            timeoutInMilliseconds: 15000
+            timeoutInMilliseconds: 60000
           
 ribbon:
-  ReadTimeout: 20000
-  ConnectTimeout: 20000
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
   MaxAutoRetries: 0
   MaxAutoRetriesNextServer: 1  
     
@@ -96,8 +96,8 @@ zuul:
     inspect.serviceId: znzj-inspect-service
     inspect.path: /inspect-service/**
   host: 
-    socket-timeout-millis: 15000 
-    connect-timeout-millis: 15000
+    socket-timeout-millis: 60000 
+    connect-timeout-millis: 60000
     
 hystrix:
   command:
@@ -105,11 +105,11 @@ hystrix:
       execution:
         isolation:
           thread: 
-            timeoutInMilliseconds: 15000
+            timeoutInMilliseconds: 60000
 
 ribbon:
-  ReadTimeout: 20000
-  ConnectTimeout: 20000
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
   MaxAutoRetries: 0
   MaxAutoRetriesNextServer: 1  
 info: 

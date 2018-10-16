@@ -59,6 +59,7 @@ inspect:
     wav.url: http://121.201.65.111:6101/ability/offlineasr
     v3.url: http://121.201.65.111:6101/ability/offlineasr
   analyzer.url: http://121.201.65.111:6500
+  dialogDate: 1
   
 sftp:
   username:  root
@@ -121,6 +122,7 @@ inspect:
     wav.url: http://localhost:20101/ability/offlineasr
     v3.url: http://localhost:20101/ability/offlineasr
   analyzer.url: http://121.201.65.111:6500
+  dialogDate: 1
   
 sftp:
   username:  root

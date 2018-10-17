@@ -63,6 +63,7 @@ inspect:
   datDir:  /home/dat
   fileRre:  TRECORDINFO
   limitSecond: 18000000
+  audioRootDir: /sz_record/
   
 sftp:
   username:  root
@@ -129,6 +130,7 @@ inspect:
   datDir:  /home/dat
   fileRre:  TRECORDINFO
   limitSecond: 18000000
+  audioRootDir: /sz_record/
   
 sftp:
   username:  root

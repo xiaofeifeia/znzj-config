@@ -62,6 +62,7 @@ inspect:
   dialogDate: 2
   datDir:  /home/dat
   fileRre:  TRECORDINFO
+  limitSecond: 18000000
   
 sftp:
   username:  root
@@ -127,6 +128,7 @@ inspect:
   dialogDate: 2
   datDir:  /home/dat
   fileRre:  TRECORDINFO
+  limitSecond: 18000000
   
 sftp:
   username:  root

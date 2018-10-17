@@ -54,6 +54,14 @@ ribbon:
   ConnectTimeout: 60000
   MaxAutoRetries: 0
   MaxAutoRetriesNextServer: 1  
+  
+ftp: 
+  ip: 192.168.1.11
+  port: 21
+  username: ftp
+  password: Abc@123456!
+  views: 
+    url: http://121.201.65.111:86
     
 info: 
   app.name:  ${spring.application.name}
@@ -112,6 +120,15 @@ ribbon:
   ConnectTimeout: 60000
   MaxAutoRetries: 0
   MaxAutoRetriesNextServer: 1  
+  
+ftp: 
+  ip: 192.168.1.11
+  port: 21
+  username: ftp
+  password: Abc@123456!
+  views: 
+    url: http://121.201.65.111:86
+    
 info: 
   app.name:  ${spring.application.name}
   company.name: www.xph.com

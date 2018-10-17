@@ -45,6 +45,8 @@ zuul:
     analyzer.path: /analyzer-service/**
     inspect.serviceId: znzj-inspect-service
     inspect.path: /inspect-service/**
+    statistics.serviceId: znzj-statistics-service
+    statistics.path: /statistics-service/**
   host: 
     socket-timeout-millis: 60000 
     connect-timeout-millis: 60000
@@ -119,6 +121,8 @@ zuul:
     analyzer.path: /analyzer-service/**
     inspect.serviceId: znzj-inspect-service
     inspect.path: /inspect-service/**
+    statistics.serviceId: znzj-statistics-service
+    statistics.path: /statistics-service/**
   host: 
     socket-timeout-millis: 60000 
     connect-timeout-millis: 60000

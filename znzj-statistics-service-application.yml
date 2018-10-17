@@ -43,7 +43,7 @@ info:
 spring: 
   profiles: dev
   application:
-    name: znzj-analyzer-service
+    name: znzj-statistics-service
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource
      platform: mysql

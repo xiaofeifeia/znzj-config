@@ -58,7 +58,7 @@ ribbon:
   MaxAutoRetriesNextServer: 1  
   
 ftp: 
-  ip: 192.168.1.11
+  ip: 121.201.65.111
   port: 21
   username: ftp
   password: Abc@123456!
@@ -126,7 +126,7 @@ ribbon:
   MaxAutoRetriesNextServer: 1  
   
 ftp: 
-  ip: 192.168.1.11
+  ip: 121.201.65.111
   port: 21
   username: ftp
   password: Abc@123456!

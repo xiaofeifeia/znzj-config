@@ -59,7 +59,7 @@ spring:
     encoding: UTF-8
 
 sftp: 
-  ip: 121.201.65.111
+  host: 121.201.65.111
   port: 6022
   username: root
   password: 123456
@@ -123,7 +123,7 @@ spring:
     encoding: UTF-8
 
 sftp: 
-  ip: 121.201.65.111
+  host: 121.201.65.111
   port: 6022
   username: root
   password: 123456

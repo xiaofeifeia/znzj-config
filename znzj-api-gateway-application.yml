@@ -57,13 +57,11 @@ ribbon:
   MaxAutoRetries: 0
   MaxAutoRetriesNextServer: 1  
   
-ftp: 
+sftp: 
   ip: 121.201.65.111
-  port: 21
-  username: ftp
-  password: Abc@123456!
-  views: 
-    url: http://121.201.65.111:86
+  port: 6022
+  username: root
+  password: 123456
     
 info: 
   app.name:  ${spring.application.name}
@@ -125,13 +123,12 @@ ribbon:
   MaxAutoRetries: 0
   MaxAutoRetriesNextServer: 1  
   
-ftp: 
+sftp: 
   ip: 121.201.65.111
-  port: 21
-  username: ftp
-  password: Abc@123456!
-  views: 
-    url: http://121.201.65.111:86
+  port: 6022
+  username: root
+  password: 123456
+  
     
 info: 
   app.name:  ${spring.application.name}

@@ -98,7 +98,7 @@ info:
   build.version: $project.version$
   
 spring: 
-  profiles: test
+  profiles: test 
   application:
     name: znzj-statistics-service
   datasource:

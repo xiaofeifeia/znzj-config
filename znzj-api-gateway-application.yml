@@ -36,6 +36,7 @@ zuul:
   #ignored-services: znzj-user-service
   prefix: /znzj
   ignored-services: "*"
+  sensitive-headers: Access-Control-Allow-Origin,Access-Control-Allow-Methods
   routes: 
     gateway.serviceId: znzj-api-gateway
     gateway.path: /gateway-service/**
@@ -111,6 +112,7 @@ eureka:
 zuul: 
   #ignored-services: znzj-user-service
   prefix: /znzj
+  sensitive-headers: Access-Control-Allow-Origin,Access-Control-Allow-Methods
   ignored-services: "*"
   routes: 
     gateway.serviceId: znzj-api-gateway

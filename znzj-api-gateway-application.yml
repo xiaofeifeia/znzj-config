@@ -35,11 +35,9 @@ eureka:
 zuul: 
   #ignored-services: znzj-user-service
   prefix: /znzj
+  servlet-path: /
   ignored-services: "*"
-  sensitive-headers: Access-Control-Allow-Origin,Access-Control-Allow-Methods
   routes: 
-    gateway.serviceId: znzj-api-gateway
-    gateway.path: /gateway-service/**
     user.serviceId: znzj-user-service
     user.path: /user-service/**
     analyzer.serviceId: znzj-analyzer-service
@@ -112,11 +110,9 @@ eureka:
 zuul: 
   #ignored-services: znzj-user-service
   prefix: /znzj
-  sensitive-headers: Access-Control-Allow-Origin,Access-Control-Allow-Methods
+  servlet-path: /
   ignored-services: "*"
   routes: 
-    gateway.serviceId: znzj-api-gateway
-    gateway.path: /gateway-service/**
     user.serviceId: znzj-user-service
     user.path: /user-service/**
     analyzer.serviceId: znzj-analyzer-service

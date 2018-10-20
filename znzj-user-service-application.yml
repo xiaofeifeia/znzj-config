@@ -43,7 +43,7 @@ spring:
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource
      platform: mysql
-     url: jdbc:mysql://121.201.65.111:6306/znzj?useUnicode=true&characterEncoding=utf-8
+     url: jdbc:mysql://121.201.65.111:6306/ellison?useUnicode=true&characterEncoding=utf-8
      username: root
      password: 123456
   redis:
@@ -95,7 +95,7 @@ spring:
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource
      platform: mysql
-     url: jdbc:mysql://localhost:3306/znzj?useUnicode=true&characterEncoding=utf-8
+     url: jdbc:mysql://localhost:3306/ellison?useUnicode=true&characterEncoding=utf-8
      username: root
      password: 123456
   redis:

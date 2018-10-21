@@ -50,11 +50,7 @@ spring:
     host: 121.201.65.111
     port: 6079
     password: ahui123321
-    timeout: 25000
-    cluster:
-      nodes: 121.201.65.111:7003
-      timeout: 25000
-    isCluster: false
+    timeout: 25000 
 
 mybatis: 
   type-aliases-package: com.znzj.model
@@ -107,10 +103,6 @@ spring:
     port: 6379
     password: ahui123321
     timeout: 25000 
-    cluster:
-      nodes: 121.201.65.111:7003
-      timeout: 25000
-    isCluster: false
 
 mybatis: 
   type-aliases-package: com.znzj.model

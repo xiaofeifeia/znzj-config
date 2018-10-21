@@ -16,10 +16,6 @@ spring:
     port: 6079
     password: ahui123321
     timeout: 25000 
-    cluster:
-      nodes: 121.201.65.111:7003
-      timeout: 25000
-    isCluster: false
     
 eureka:
   client: 
@@ -87,10 +83,6 @@ spring:
     port: 6379
     password: ahui123321
     timeout: 25000 
-    cluster:
-      nodes: 121.201.65.111:7003
-      timeout: 25000
-    isCluster: false
     
 eureka:
   client: 
@@ -136,7 +128,6 @@ sftp:
   port: 6022
   username: root
   password: 123456
-
   
     
 info: 

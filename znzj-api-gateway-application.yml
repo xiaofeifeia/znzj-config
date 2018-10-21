@@ -16,6 +16,8 @@ spring:
     port: 6079
     password: ahui123321
     timeout: 25000 
+    clusterNodes: 121.201.65.111:7003
+    isCluster: false
     
 eureka:
   client: 
@@ -83,6 +85,8 @@ spring:
     port: 6379
     password: ahui123321
     timeout: 25000 
+    clusterNodes: 121.201.65.111:7003
+    isCluster: false
     
 eureka:
   client: 

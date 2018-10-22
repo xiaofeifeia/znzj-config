@@ -32,7 +32,7 @@ hystrix:
         isolation:
           strategy: SEMAPHORE
           thread: 
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 12000
 
 info: 
   app.name: ${spring.application.name}
@@ -91,7 +91,7 @@ hystrix:
         isolation:
           strategy: SEMAPHORE
           thread: 
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 120000
 
 info: 
   app.name: ${spring.application.name}

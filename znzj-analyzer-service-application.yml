@@ -32,7 +32,7 @@ hystrix:
         isolation:
           strategy: SEMAPHORE
           thread: 
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 120000
 
 info: 
   app.name: ${spring.application.name}
@@ -63,14 +63,14 @@ spring:
   http: 
     multipart: 
       enabled: true   # 启用http上传处理
-      max-file-size: 100MB # 设置单个文件的最大长度
-      max-request-size: 100MB # 设置最大的请求文件的大小
-      file-size-threshold: 1MB  # 当上传文件达到1MB的时候进行磁盘写入
+      maxFileSize: 1000MB # 设置单个文件的最大长度
+      maxRequestSize: 1000MB # 设置最大的请求文件的大小
+      fileSizeThreshold: 1MB  # 当上传文件达到1MB的时候进行磁盘写入
       location: /  # 上传的临时目录
 
 ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
+  ReadTimeout: 120000
+  ConnectTimeout: 120000
   MaxAutoRetries: 0
   MaxAutoRetriesNextServer: 1 
   
@@ -112,7 +112,7 @@ hystrix:
         isolation:
           strategy: SEMAPHORE
           thread: 
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 120000
 
 info: 
   app.name: ${spring.application.name}
@@ -142,15 +142,15 @@ spring:
   http: 
     multipart: 
       enabled: true   # 启用http上传处理
-      max-file-size: 100MB # 设置单个文件的最大长度
-      max-request-size: 100MB # 设置最大的请求文件的大小
-      file-size-threshold: 1MB  # 当上传文件达到1MB的时候进行磁盘写入
+      maxFileSize: 1000MB # 设置单个文件的最大长度
+      maxRequestSize: 1000MB # 设置最大的请求文件的大小
+      fileSizeThreshold: 1MB  # 当上传文件达到1MB的时候进行磁盘写入
       location: /  # 上传的临时目录
 
       
 ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
+  ReadTimeout: 120000
+  ConnectTimeout: 120000
   MaxAutoRetries: 0
   MaxAutoRetriesNextServer: 1 
   

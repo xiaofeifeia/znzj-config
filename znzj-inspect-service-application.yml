@@ -73,6 +73,13 @@ sftp:
   host: 121.201.65.111
   port: 6022
 
+dialog:
+  sftp:
+    username:  root
+    password:  123456
+    host: 121.201.65.111
+    port: 6022
+
 ---
 server:
   port: 8783
@@ -141,3 +148,10 @@ sftp:
   password:  123456
   host: 127.0.0.1
   port: 22
+  
+dialog:
+  sftp:
+    username:  root
+    password:  123456
+    host: 127.0.0.1
+    port: 22

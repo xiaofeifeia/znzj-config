@@ -89,7 +89,7 @@ spring:
   application:
     name: znzj-api-gateway
   redis:
-    host: 192.168.1.11
+    host: 192.168.1.79
     port: 6379
     password: ahui123321
     timeout: 25000 

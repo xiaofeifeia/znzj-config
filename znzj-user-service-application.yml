@@ -43,7 +43,7 @@ spring:
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource
      platform: mysql
-     url: jdbc:mysql://121.201.65.111:6306/ellison?useUnicode=true&characterEncoding=utf-8
+     url: jdbc:mysql://192.168.1.79:3306/ellison?useUnicode=true&characterEncoding=utf-8
      username: root
      password: 123456
   redis:
@@ -102,7 +102,7 @@ spring:
      username: root
      password: 123456
   redis:
-    host: 192.168.1.11
+    host: 192.168.1.79
     port: 6379
     password: ahui123321
     timeout: 25000 

@@ -107,6 +107,7 @@ spring:
     password: ahui123321
     timeout: 25000 
     clusterNodes: 121.201.65.111:7003
+    clusterPassword: ahui123321
     isCluster: false
 
 mybatis: 

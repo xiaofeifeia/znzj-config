@@ -57,6 +57,7 @@ spring:
     timeout: 25000 
     redis:
     clusterNodes: 121.201.65.111:7003
+    clusterPassword: ahui123321
     isCluster: false
   messages:
     encoding: UTF-8

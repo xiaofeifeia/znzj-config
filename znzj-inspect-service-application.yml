@@ -61,7 +61,7 @@ inspect:
   ability:
     wav.url: http://121.201.65.111:6101/ability/offlineasr
     v3.url: http://121.201.65.111:6101/ability/offlineasr
-  analyzer.url: http://121.201.65.111:3000
+  analyzer.url: http://121.201.65.111:9000
   dialogDate: 2
   datDir:  /home/dat
   fileRre:  TRECORDINFO

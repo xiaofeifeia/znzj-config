@@ -43,7 +43,7 @@ info:
 spring: 
   profiles: dev
   application:
-    name: znzj-statistics-service
+    name: css-statistics-service
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource
      platform: mysql
@@ -103,7 +103,7 @@ info:
 spring: 
   profiles: test 
   application:
-    name: znzj-statistics-service
+    name: css-statistics-service
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource
      platform: mysql

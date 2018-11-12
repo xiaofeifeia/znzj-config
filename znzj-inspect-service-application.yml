@@ -37,7 +37,7 @@ info:
 spring: 
   profiles: dev
   application:
-    name: znzj-inspect-service
+    name: css-inspect-service
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource
      platform: mysql
@@ -61,7 +61,7 @@ inspect:
   ability:
     wav.url: http://121.201.65.111:6101/ability/offlineasr
     v3.url: http://121.201.65.111:6101/ability/offlineasr
-  analyzer.url: http://121.201.65.111:9000
+  analyzer.url: http://121.201.65.111:7000
   dialogDate: 2
   datDir:  /home/dat
   fileRre:  TRECORDINFO
@@ -114,7 +114,7 @@ info:
 spring: 
   profiles: test 
   application:
-    name: znzj-inspect-service
+    name: css-inspect-service
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource
      platform: mysql

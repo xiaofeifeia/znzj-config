@@ -10,7 +10,7 @@ server:
 spring:
   profiles: dev
   application:
-    name: znzj-api-gateway
+    name: css-api-gateway
   redis:
     host: 121.201.65.111
     port: 6079
@@ -41,13 +41,13 @@ zuul:
   prefix: /znzj
   ignored-services: "*"
   routes: 
-    user.serviceId: znzj-user-service
+    user.serviceId: css-user-service
     user.path: /user-service/**
-    analyzer.serviceId: znzj-analyzer-service
+    analyzer.serviceId: css-analyzer-service
     analyzer.path: /analyzer-service/**
-    inspect.serviceId: znzj-inspect-service
+    inspect.serviceId: css-inspect-service
     inspect.path: /inspect-service/**
-    statistics.serviceId: znzj-statistics-service
+    statistics.serviceId: css-statistics-service
     statistics.path: /statistics-service/**
   host: 
     socket-timeout-millis: 120000 
@@ -88,7 +88,7 @@ server:
 spring:
   profiles: test
   application:
-    name: znzj-api-gateway
+    name: css-api-gateway
   redis:
     host: 192.168.1.79
     port: 6379
@@ -119,13 +119,13 @@ zuul:
   prefix: /znzj
   ignored-services: "*"
   routes: 
-    user.serviceId: znzj-user-service
+    user.serviceId: css-user-service
     user.path: /user-service/**
-    analyzer.serviceId: znzj-analyzer-service
+    analyzer.serviceId: css-analyzer-service
     analyzer.path: /analyzer-service/**
-    inspect.serviceId: znzj-inspect-service
+    inspect.serviceId: css-inspect-service
     inspect.path: /inspect-service/**
-    statistics.serviceId: znzj-statistics-service
+    statistics.serviceId: css-statistics-service
     statistics.path: /statistics-service/**
   host: 
     socket-timeout-millis: 120000 

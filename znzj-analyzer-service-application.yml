@@ -43,7 +43,7 @@ info:
 spring: 
   profiles: dev
   application:
-    name: znzj-analyzer-service
+    name: css-analyzer-service
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     platform: mysql
@@ -124,7 +124,7 @@ info:
 spring: 
   profiles: test
   application:
-    name: znzj-analyzer-service
+    name: css-analyzer-service
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     platform: mysql

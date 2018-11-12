@@ -39,7 +39,7 @@ info:
 spring: 
   profiles: dev
   application:
-    name: znzj-user-service
+    name: css-user-service
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource
      platform: mysql
@@ -94,7 +94,7 @@ info:
 spring: 
   profiles: test 
   application:
-    name: znzj-user-service
+    name: css-user-service
   datasource:
      type: com.alibaba.druid.pool.DruidDataSource
      platform: mysql

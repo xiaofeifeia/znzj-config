@@ -116,18 +116,22 @@ eureka:
     prefer-ip-address: true 
     
 zuul: 
-  #ignored-services: znzj-user-service
   prefix: /znzj
+  servlet-path: /
   ignored-services: "*"
   routes: 
-    user.serviceId: css-user-service
-    user.path: /user-service/**
-    analyzer.serviceId: css-analyzer-service
-    analyzer.path: /analyzer-service/**
-    inspect.serviceId: css-inspect-service
-    inspect.path: /inspect-service/**
-    statistics.serviceId: css-statistics-service
-    statistics.path: /statistics-service/**
+    user:
+      serviceId: css-user-service
+      path: /user-service/**
+    analyzer: 
+      serviceId: css-analyzer-service
+      path: /analyzer-service/**
+    inspect: 
+      serviceId: css-inspect-service
+      path: /inspect-service/**
+    statistics: 
+      serviceId: css-statistics-service
+      path: /statistics-service/**
   host: 
     socket-timeout-millis: 120000 
     connect-timeout-millis: 120000

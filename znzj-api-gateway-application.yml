@@ -6,8 +6,6 @@ spring:
 ---
 server:
   port: 9527
-  tomcat:
-    uri-encoding: UTF-8
 
 spring:
   profiles: dev
@@ -21,11 +19,6 @@ spring:
     clusterNodes: 121.201.65.111:7003
     clusterPassword: ahui123321
     isCluster: false
-  http: 
-    encoding:
-      charset: UTF-8
-      force: true
-      enabled: true
       
 
     
@@ -38,21 +31,22 @@ eureka:
     prefer-ip-address: true 
     
 zuul: 
-  #ignored-services: znzj-user-service
   prefix: /znzj
+  servlet-path: /
   ignored-services: "*"
   routes: 
-    user.serviceId: css-user-service
-    user.path: /user-service/**
-    analyzer.serviceId: css-analyzer-service
-    analyzer.path: /analyzer-service/**
-    inspect.serviceId: css-inspect-service
-    inspect.path: /inspect-service/**
-    statistics.serviceId: css-statistics-service
-    statistics.path: /statistics-service/**
-  host: 
-    socket-timeout-millis: 120000 
-    connect-timeout-millis: 120000
+    user:
+      serviceId: css-user-service
+      path: /user-service/**
+    analyzer: 
+      serviceId: css-analyzer-service
+      path: /analyzer-service/**
+    inspect: 
+      serviceId: css-inspect-service
+      path: /inspect-service/**
+    statistics: 
+      serviceId: css-statistics-service
+      path: /statistics-service/**
 
   
 hystrix:
@@ -98,13 +92,6 @@ spring:
     clusterNodes: 192.168.96.102:7001,192.168.96.102:7002,192.168.96.102:7003,192.168.96.102:7004,192.168.96.102:7005,192.168.96.102:7006
     clusterPassword: ahui123321
     isCluster: false
-  http: 
-    multipart: 
-      enabled: true   # 启用http上传处理
-      max-file-size: 1000MB # 设置单个文件的最大长度
-      max-request-size: 1000MB # 设置最大的请求文件的大小
-      file-size-threshold: 1MB  # 当上传文件达到1MB的时候进行磁盘写入
-      location: /  # 上传的临时目录
 
     
 eureka:
@@ -116,7 +103,7 @@ eureka:
     prefer-ip-address: true 
     
 zuul: 
-  #prefix: /znzj
+  prefix: /znzj
   servlet-path: /
   ignored-services: "*"
   routes: 

@@ -7,6 +7,8 @@ spring:
 ---
 server:
   port: 8782
+  tomcat:
+    uri-encoding: UTF-8
   
 eureka:
   instance: 
@@ -62,12 +64,16 @@ spring:
   messages:
     encoding: UTF-8
   http: 
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
     multipart: 
       enabled: true   # 启用http上传处理
       max-file-size: 1000MB # 设置单个文件的最大长度
       max-request-size: 1000MB # 设置最大的请求文件的大小
       file-size-threshold: 1MB  # 当上传文件达到1MB的时候进行磁盘写入
-      location: /  # 上传的临时目录
+      location: /appdata/zhijian/tmp  # 上传的临时目录
 
 ribbon:
   ReadTimeout: 120000

@@ -32,7 +32,6 @@ eureka:
     
 zuul: 
   prefix: /znzj
-  servlet-path: /
   ignored-services: "*"
   routes: 
     user:
@@ -104,7 +103,6 @@ eureka:
     
 zuul: 
   prefix: /znzj
-  servlet-path: /
   ignored-services: "*"
   routes: 
     user:

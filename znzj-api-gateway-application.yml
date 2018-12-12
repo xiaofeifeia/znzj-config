@@ -102,8 +102,8 @@ eureka:
     prefer-ip-address: true 
     
 zuul: 
-  prefix: /znzj
   servlet-path: /
+  prefix: /znzj
   ignored-services: "*"
   routes: 
     user:

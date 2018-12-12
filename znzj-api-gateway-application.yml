@@ -19,7 +19,17 @@ spring:
     clusterNodes: 121.201.65.111:7003
     clusterPassword: ahui123321
     isCluster: false
-      
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+    multipart:
+      max-file-size: 20Mb
+      max-request-size: 20Mb
+server:
+  tomcat:
+    uri-encoding: UTF-8
 
     
 eureka:
@@ -31,6 +41,7 @@ eureka:
     prefer-ip-address: true 
     
 zuul: 
+  servlet-path: /
   prefix: /znzj
   ignored-services: "*"
   routes: 
@@ -91,7 +102,17 @@ spring:
     clusterNodes: 192.168.96.102:7001,192.168.96.102:7002,192.168.96.102:7003,192.168.96.102:7004,192.168.96.102:7005,192.168.96.102:7006
     clusterPassword: ahui123321
     isCluster: false
-
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+    multipart:
+      max-file-size: 20Mb
+      max-request-size: 20Mb
+server:
+  tomcat:
+    uri-encoding: UTF-8
     
 eureka:
   client: 

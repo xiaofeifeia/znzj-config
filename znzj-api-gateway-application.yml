@@ -31,7 +31,7 @@ eureka:
     prefer-ip-address: true 
     
 zuul: 
-  servlet-path: /
+#  servlet-path: /
   prefix: /znzj
   ignored-services: "*"
   routes: 
@@ -103,7 +103,7 @@ eureka:
     prefer-ip-address: true 
     
 zuul: 
-  servlet-path: /
+#  servlet-path: /
   prefix: /znzj
   ignored-services: "*"
   routes: 

@@ -52,7 +52,7 @@ zuul:
       path: /my_project/**
     my_project!:
       serviceId: myq1
-      path: /myq_project1/**  
+      path: /myq_project-1/**  
 hystrix:
   command:
     default:

@@ -50,7 +50,7 @@ zuul:
     my_project:
       serviceId: myq
       path: /my_project/**
-    my_project!:
+    my_project-1:
       serviceId: myq1
       path: /myq_project-1/**  
 hystrix:

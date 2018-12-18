@@ -68,7 +68,7 @@ inspect:
   limitSecond: 18000000
   audioRootDir: /sz_record/
   importDialog: 
-    scheduled: 0/30 0 0 * * ?
+    scheduled: 0/30 * * * * ?
   
 sftp:
   username:  root
@@ -147,7 +147,7 @@ inspect:
   limitSecond: 18000000
   audioRootDir: /sz_record/
   importDialog: 
-    scheduled: 0/30 0 0 * * ?
+    scheduled: 0 0 0 * * ?
   
 sftp:
   username:  root

@@ -47,8 +47,12 @@ zuul:
     statistics: 
       serviceId: css-statistics-service
       path: /statistics-service/**
-
-  
+    my_project:
+      serviceId: myq
+      path: /my_project/**
+    my_project-1:
+      serviceId: myq1
+      path: /myq_project-1/**  
 hystrix:
   command:
     default:

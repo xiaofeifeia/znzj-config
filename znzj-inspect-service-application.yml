@@ -144,6 +144,8 @@ inspect:
   fileRre:  TRECORDINFO
   limitSecond: 18000000
   audioRootDir: /sz_record/
+  importDialog: 
+    scheduled: 0 0 0 * * ?
   
 sftp:
   username:  root
